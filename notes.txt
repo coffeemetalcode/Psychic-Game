@@ -1,0 +1,16 @@
+**NOTES**
+
+declare 3 variables: appScore and userScore set to 0 and guessesLeft set to 9
+
+function to randomly choose a letter and store it in a variable appLett
+
+loop {
+
+event listener to get user input and store it in a variable userLett
+
+evaluate whether appLett === userLett
+
+if true { userScore++ && guessesLeft = 9 }
+
+if false { appScore++ && apend userLett to page text && guessesLeft-- }
+
