@@ -18,6 +18,7 @@ var compGuess = randomLetter();
 console.log(compGuess);
 
 // Listen for user's letter choice
+// TODO -->-> ignore any key that isn't a single letter press
 document.onkeyup = function (event) {
 
   // Determines which key was pressed.
@@ -58,5 +59,7 @@ document.onkeyup = function (event) {
   document.getElementById("wins").innerHTML = "Wins: " + wins;
   document.getElementById("losses").innerHTML = "Losses: " + losses;
   document.getElementById("guesses").innerHTML = "Guesses Left: " + guessesLeft;
+
+  // TODO -->-> reset the game when a user wins or runs out of guesses. Currently, the "guessed" array and counter are reset, but the computer doesn't pick a new letter.
 
 };
