@@ -14,7 +14,9 @@ function randomLetter() {
   return letters.substr(Math.floor(Math.random() * 26), 1);
 }
 
+//This is unnecessary if I define compGuess as above
 var compGuess = randomLetter();
+// compGuess()
 console.log(compGuess);
 
 // Listen for user's letter choice
@@ -29,6 +31,7 @@ document.onkeyup = function (event) {
     wins++
     guessesLeft = 10;
     guessed = [];
+    // compGuess();
   }
 
   // or else decrement remaining guesses by 1
