@@ -1,0 +1,20 @@
+body {
+    background-color: #ffe6e6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 175%;
+    line-height: 175%;
+    width: 960px;
+    margin: auto;
+}
+
+.title {
+    color: blue;
+}
+
+#wins {
+    color: #006600;
+}
+
+#losses {
+    color: #cc0000;
+}
